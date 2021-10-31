@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+html{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Cormorant Garamond', serif;
+    background-color: whitesmoke;
+}
+.encabezado {
+    background-color: gray;
+    color: black;
+    padding: 5px;
+}
+.bienvenida{
+    text-align: center;
+    text-decoration-style: solid;
+}
+#nosotros{
+    background-color: whitesmoke;
+    color: black;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.nav1, .nav2, .nav3, .nav4{
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+    background-color:#4D5656;
+    color: white;
+}
+.fondo1{
+    background-image: url("../img/Pizarnik1.jpg");
+    background-repeat: no-repeat;
+    background-position: unset;
+}
+#quote-titulo, #quote1, #quote2, #quote3, #quote4, #quote5, #quote6{
+    color: black;
+    font-weight:bolder;
+}
+.pie-de-pagina{
+    display: grid;
+    grid-template-areas: "contacto mapa redes-sociales";
+    padding: 10px;
+    background-color: gray;
+    width: 1.1;
+    color: white;
+    align-content: center;
+}
+.contacto{
+    grid-area: contacto;
+    width: 0.4;
+}
+.contacto-titulo{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.contacto-contenido{
+    font-size: 15px;
+    
+}
+.mapa{
+    grid-area: mapa;
+    width: 0.4;
+}
+.mapa-titulo{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.redes-sociales{
+    grid-area: redes-sociales;
+    width: 0.4;
+}
+.redes-sociales-titulo{
+    font-size: 20px;
+    margin-bottom: 60px;
+    
+}
+.redes-sociales-link{
+    text-decoration: none;
+}
+.svg-inline--fa{
+    width: 40px;
+    color: white;
+}
+iframe{
+    width: 180px;
+}
+
+#biografia{
+    font-weight: bolder;
+    background-color: whitesmoke;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 25px;
+    font-size: 18px;
+}
+#animado{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+#animado {
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+#imagenes{
+    display: grid;
+    grid-template-areas: "imagen1 imagen2 imagen3"
+    "imagen4 imagen5 imagen6";
+    width: 1.2;
+    align-content: center;
+    background-color: whitesmoke;
+    
+}
+#imagen1{
+    grid-area: imagen1;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+#imagen2{
+    grid-area: imagen2;
+    width: 300px;
+    display: block;
+    margin: auto;
+}
+#imagen3{
+    grid-area: imagen3;
+    width: 300px;
+    display:block;
+    margin: auto;
+    height: 500px;
+}
+#imagen4{
+    grid-area: imagen4;
+    width: 300px;
+    display:block;
+    margin: auto;
+}
+#imagen5{
+    grid-area: imagen5;
+    width: 300px;
+    display:block;
+    margin: auto;
+    height: 450px;
+}
+#imagen6{
+    grid-area: imagen6;
+    width: 300px;
+    display:block;
+    margin: auto;
+}
+.link-sinopsis {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .link-sinopsis img {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .sinopsis {
+    top: 0;
+    left: 0;
+    width: 94%;
+    height: 94%;
+    padding: 1rem;
+    background-color:whitesmoke;
+    color: black;
+    pointer-events: none;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .sinopsis > p {
+    padding: 1rem;
+    border:black;
+    width: 100%;
+    height: 100%;
+  }
+.link-sinopsis:hover img{
+   border-radius: 0%;
+   transition: .5s;
+}
+.sinopsis {
+    position: absolute;
+    opacity: 0;
+    font-weight: bolder;
+    text-align: center;    
+  }
+.sinopsis h3{
+    text-decoration: underline;
+}
+.link-sinopsis:hover .sinopsis {
+    border-radius: 0%;
+    opacity: 1;
+    pointer-events: auto;
+  }
+#inicio{
+    display:grid;
+    grid-template-areas: "nosotros nosotros aside1";
+    width: 1.2;
+}
+#nosotros{
+    grid-area: nosotros;
+    width: 0.8;
+}
+#aside1{
+    grid-area: aside1;
+    width: 0.4;
+}
+#inscribite{
+    text-decoration: underline;
+    font-size: 25px;
+}
+#formulario{
+    color: black;
+}
+@media screen and (min-width: 768px) and (max-width :1023px){
+    #imagenes{
+        display: grid;
+        grid-template-areas: "imagen1 imagen2"
+        "imagen3 imagen4"
+        "imagen5 imagen6";
+        width: 1.2;
+        align-content: center;
+        background-color: whitesmoke;   
+}
+}
+@media screen and (max-width:767px) {
+    #imagenes{
+        display: grid;
+        grid-template-areas: "imagen1"
+        "imagen2"
+        "imagen3"
+        "imagen4"
+        "imagen5"
+        "imagen6";
+        width: 1.2;
+        align-content: center;
+        background-color: whitesmoke;   
+}}
